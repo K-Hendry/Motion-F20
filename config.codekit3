@@ -38,6 +38,30 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/demo.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/demo.html",
+		"oF": 0
+		},
+	"/dev/global/head.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/head.html",
+		"oF": 0
+		},
+	"/dev/global/scripts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/scripts.html",
+		"oF": 0
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -46,8 +70,19 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/scripts.js": {
+	"/dev/js/demo.js": {
 		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/demo-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scripts.js": {
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -187,7 +222,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_section-1.scss": {
+	"/dev/scss/sections/_demo.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -195,7 +230,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-1.css",
+		"oAP": "/dev/scss/sections/_demo.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -212,6 +247,61 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/node_modules/gsap/CSSPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/CSSPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/gsap-core.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/gsap-core-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/gsap/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
@@ -992,7 +1082,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

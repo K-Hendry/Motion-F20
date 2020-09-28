@@ -417,5 +417,26 @@ textarea {
     Footer
 ============= */
 /* =============
-    Section 1
+    Demo
 ============= */
+.ball {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.ball1 {
+  background-color: deeppink;
+}
+
+.ball2 {
+  background-color: greenyellow;
+}
+
+.ball3 {
+  background-color: lightseagreen;
+}
+
+.ball4 {
+  background-color: rebeccapurple;
+}
