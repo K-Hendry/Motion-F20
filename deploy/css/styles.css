@@ -419,6 +419,18 @@ textarea {
 /* =============
     Demo
 ============= */
+#demo-container {
+  display: grid;
+  grid-template-areas: auto 50% auto;
+  grid-template-areas: ". demo .";
+}
+#demo-container > div {
+  grid-area: demo;
+}
+#demo-container > div ul {
+  display: flex;
+}
+
 .ball {
   height: 150px;
   width: 150px;
@@ -431,10 +443,6 @@ textarea {
 
 .ball2 {
   background-color: greenyellow;
-}
-
-.ball3 {
-  background-color: lightseagreen;
 }
 
 .ball4 {

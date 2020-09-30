@@ -1,6 +1,18 @@
 /* =============
     Demo
 ============= */
+#demo-container{
+    display: grid;
+    grid-template-areas: auto 50% auto;
+    grid-template-areas: ". demo .";
+
+    >div{
+        grid-area: demo;
+        ul{
+            display: flex;
+        }
+    }
+}
 .ball{
     height: 150px;
     width: 150px;
@@ -11,9 +23,6 @@
 }
 .ball2{
     background-color: greenyellow;
-}
-.ball3{
-    background-color: lightseagreen;
 }
 .ball4{
     background-color: rebeccapurple;
