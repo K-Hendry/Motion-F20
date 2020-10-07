@@ -365,6 +365,49 @@ ul li {
   list-style: none;
 }
 
+.content-spacing {
+  padding-top: 100px;
+}
+@media (min-width: 768px) {
+  .content-spacing {
+    padding-top: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-spacing {
+    padding-top: 200px;
+  }
+}
+
+.subcontent-spacing {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .subcontent-spacing {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .subcontent-spacing {
+    margin-top: 130px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  background-color: #212227;
+  grid-template-columns: 5vw auto 5vw;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+.grid-container > div {
+  grid-area: container;
+}
+
 /* =============
     Typography
 ============= */
@@ -372,14 +415,48 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
 
+h3 {
+  color: #FFEAD0;
+  font-size: 1rem;
+  font-weight: 500;
+  grid-area: name;
+  line-height: 1.25rem;
+  padding-top: 1vh;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.5625rem;
+    padding-top: 2vh;
+  }
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 1.5625rem;
+    padding: 10% 15%;
+    text-align: left;
+  }
+}
+
 p {
-  margin: 0;
-  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
 }
 
 .section-title {
@@ -413,38 +490,342 @@ textarea {
 /* =============
     Header
 ============= */
+header div {
+  background-color: #212227;
+  display: grid;
+  grid-template-areas: "name burger";
+  grid-template-columns: repeat(2, 1fr);
+  height: 5vh;
+  padding-top: 2vh;
+}
+@media (min-width: 992px) {
+  header div {
+    height: 15vh;
+  }
+}
+header div #burger-container {
+  align-items: center;
+  display: flex;
+  font-size: 1.5625rem;
+  grid-area: burger;
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+@media (min-width: 768px) {
+  header div #burger-container {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 992px) {
+  header div #burger-container {
+    visibility: collapse !important;
+  }
+}
+header div #burger-container i {
+  color: #FFEAD0;
+  cursor: pointer;
+}
+header div #nav-container {
+  background-color: #212227;
+  display: none;
+  grid-area: nav;
+  padding: 0 20px;
+}
+@media (min-width: 1200px) {
+  header div #nav-container {
+    background-color: #212227;
+    display: none !important;
+    padding: 0 5vw;
+    width: 90vw;
+  }
+}
+
 /* =============
     Footer
 ============= */
-/* =============
-    Demo
-============= */
-#demo-container {
+footer {
+  background-color: #212227;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+footer h3 {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  footer h3 {
+    margin-bottom: -15vh;
+  }
+}
+footer #icons {
   display: grid;
-  grid-template-areas: auto 50% auto;
-  grid-template-areas: ". demo .";
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 80vw;
+  padding: 0 10vw;
 }
-#demo-container > div {
-  grid-area: demo;
+@media (min-width: 992px) {
+  footer #icons {
+    margin: auto 15vw;
+  }
 }
-#demo-container > div ul {
+footer #icons li {
   display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 5vh;
+}
+@media (min-width: 768px) {
+  footer #icons li {
+    font-size: 1.875rem;
+  }
+}
+footer #icons li i {
+  color: #FFEAD0;
 }
 
-.ball {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+/* =============
+    Index
+============= */
+#index {
+  background-color: #212227;
 }
-
-.ball1 {
-  background-color: deeppink;
+#index p {
+  font-size: 1.25rem;
+  background-color: #FFF6EB;
+  opacity: 90%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-
-.ball2 {
-  background-color: greenyellow;
+@media (min-width: 768px) {
+  #index p:hover {
+    opacity: 0;
+  }
 }
-
-.ball4 {
-  background-color: rebeccapurple;
+#index h2 {
+  text-align: center;
+  color: #FFEAD0;
+}
+#index #index-intro-container {
+  background-color: #212227;
+  height: 100vh;
+}
+@media (min-width: 992px) {
+  #index #index-intro-container {
+    height: 150vh;
+  }
+}
+#index #index-intro-container #name-svg {
+  padding-top: 100px;
+}
+#index #index-intro-container h1 {
+  color: #FFEAD0;
+  text-align: center;
+}
+#index #index-intro-container #manicule {
+  height: 10%;
+  padding-bottom: 30px;
+  padding-left: 40%;
+  padding-top: 30px;
+  width: 10%;
+}
+@media (min-width: 992px) {
+  #index #index-intro-container #manicule {
+    height: 30%;
+    width: 20%;
+    padding-top: 75px;
+  }
+}
+#index #index-design-container ul {
+  margin: auto 5%;
+}
+@media (min-width: 768px) {
+  #index #index-design-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-design-container ul {
+    margin: auto 15%;
+    column-gap: 50px;
+  }
+}
+#index #index-design-container ul #baskerville {
+  background-image: url("../img/design/baskerville-mockup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-design-container ul #baskerville {
+    height: 40vh;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-design-container ul #baskerville {
+    height: 55vh;
+  }
+}
+#index #index-design-container ul #bertoia {
+  background-image: url("../img/design/bert.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-design-container ul #bertoia {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-design-container ul #bertoia {
+    height: 55vh;
+  }
+}
+#index #index-design-container ul #basement {
+  background-image: url("../img/design/basement_cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-design-container ul #basement {
+    height: 40vh;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-design-container ul #basement {
+    height: 55vh;
+  }
+}
+#index #index-design-container ul #pcc {
+  background-image: url("../img/design/pcc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-design-container ul #pcc {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-design-container ul #pcc {
+    height: 55vh;
+  }
+}
+#index #index-photography-container ul {
+  margin: auto 5%;
+}
+@media (min-width: 768px) {
+  #index #index-photography-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-photography-container ul {
+    margin: auto 15%;
+    column-gap: 50px;
+  }
+}
+#index #index-photography-container ul #blue-van {
+  background-image: url("../img/photog/blue-van.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-photography-container ul #blue-van {
+    height: 40vh;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-photography-container ul #blue-van {
+    height: 55vh;
+  }
+}
+#index #index-photography-container ul #portrait {
+  background-image: url("../img/photog/portrait.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-photography-container ul #portrait {
+    height: 40vh;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-row-start: 1;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-photography-container ul #portrait {
+    height: 55vh;
+  }
+}
+#index #index-photography-container ul #beach {
+  background-image: url("../img/photog/beach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-photography-container ul #beach {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-photography-container ul #beach {
+    height: 55vh;
+  }
+}
+#index #index-photography-container ul #star {
+  background-image: url("../img/photog/star.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #index #index-photography-container ul #star {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+}
+@media (min-width: 992px) {
+  #index #index-photography-container ul #star {
+    height: 55vh;
+  }
 }

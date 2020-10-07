@@ -19,6 +19,126 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/design/basement_cover.jpg": {
+		"ft": 16384,
+		"iS": 155916,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/design/basement_cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/design/baskerville-mockup.jpg": {
+		"ft": 16384,
+		"iS": 321104,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/design/baskerville-mockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/design/bert.jpg": {
+		"ft": 16384,
+		"iS": 153074,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/design/bert.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/design/pcc.jpg": {
+		"ft": 16384,
+		"iS": 91692,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/design/pcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/name/manicule-beige.png": {
+		"ft": 32768,
+		"iS": 270291,
+		"oA": 0,
+		"oAP": "/deploy/img/name/manicule-beige.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/name/my-name.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/name/my-name.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/photog/beach.jpg": {
+		"ft": 16384,
+		"iS": 528421,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/photog/beach.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/photog/blue-van.jpg": {
+		"ft": 16384,
+		"iS": 535174,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/photog/blue-van.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/photog/portrait.jpg": {
+		"ft": 16384,
+		"iS": 1086213,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/photog/portrait.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/photog/star.jpg": {
+		"ft": 16384,
+		"iS": 1030132,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/photog/star.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/photog/wheat.jpg": {
+		"ft": 16384,
+		"iS": 932741,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/photog/wheat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -38,12 +158,20 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/demo.kit": {
+	"/dev/content/index.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/demo.html",
+		"oAP": "/dev/content/index.html",
+		"oF": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -52,6 +180,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/global/head.html",
+		"oF": 0
+		},
+	"/dev/global/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/header.html",
 		"oF": 0
 		},
 	"/dev/global/scripts.kit": {
@@ -71,7 +207,7 @@
 		"oF": 2
 		},
 	"/dev/js/greenBall.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -82,7 +218,7 @@
 		"tS": 0
 		},
 	"/dev/js/pinkBall.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -93,7 +229,7 @@
 		"tS": 0
 		},
 	"/dev/js/purpleBall.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -244,7 +380,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_demo.scss": {
+	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -252,7 +388,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_demo.css",
+		"oAP": "/dev/scss/sections/_index-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

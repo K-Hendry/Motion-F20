@@ -14,3 +14,33 @@ ul{
     }
 }
 
+.content-spacing{
+    padding-top: 100px;
+    @include md{
+        padding-top: 150px;
+    }
+    @include xl{
+        padding-top: 200px;
+    }
+}
+.subcontent-spacing{
+    margin-top: 50px;
+    @include md{
+        margin-top: 100px;
+    }
+    @include xl{
+        margin-top: 130px;
+    }
+}
+.grid-container{
+    display: grid;
+    background-color: $black;
+    grid-template-columns: 5vw auto 5vw;
+    grid-template-areas: ". container .";
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+    }
+    >div{
+        grid-area: container;
+    }
+}

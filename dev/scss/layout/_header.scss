@@ -1,3 +1,53 @@
 /* =============
     Header
 ============= */
+header {
+	div {
+		background-color: $black;
+		display: grid;
+		grid-template-areas: 
+		"name burger";
+		grid-template-columns: repeat(2, 1fr);
+		height: 5vh;
+		padding-top: 2vh;
+
+		@include lg {
+			height: 15vh;
+		}
+		#burger-container {
+			align-items: center;
+			display: flex;
+			font-size: rem-calc(25);
+			grid-area: burger;
+			justify-content: flex-end;
+			padding-right: 3vw;
+
+			@include md {
+				font-size: rem-calc(30);
+			}
+
+			@include lg {
+				visibility: collapse !important;
+			}
+
+			i {
+				color: $cream;
+				cursor: pointer;
+			}
+		}
+
+		#nav-container {
+			background-color: $black;
+			display: none;
+			grid-area: nav;
+			padding: 0 20px;
+
+			@include xl {
+				background-color: $black;
+				display: none !important;
+				padding: 0 5vw;
+				width: 90vw;
+			}
+		}
+	}
+}

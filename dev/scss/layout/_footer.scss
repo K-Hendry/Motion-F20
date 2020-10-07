@@ -1,3 +1,36 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-color: $black;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    h3{
+        text-align: center;
+        @include lg{
+            margin-bottom: -15vh;
+        }
+    }
+#icons {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80vw;
+    padding: 0 10vw;
+    @include lg{
+        margin: auto 15vw;
+    }
+    li {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding-top: 5vh;
+        @include md {
+            font-size: rem-calc(30);
+        }
+        i{
+            color: $cream;
+        }
+    }
+}
+
+}

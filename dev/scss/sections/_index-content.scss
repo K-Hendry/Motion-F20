@@ -1,0 +1,215 @@
+/* =============
+    Index
+============= */
+#index {
+    p{
+        font-size: rem-calc(20);
+        background-color: $white;
+        opacity: 90%;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    @include md{
+        p:hover{
+            opacity: 0;
+        }
+    }
+    h2{
+		text-align: center;
+		color: $cream;
+    }
+
+	background-color: $black;
+	#index-intro-container {
+		background-color: $black;
+		height: 100vh;
+		@include lg{
+			height: 150vh;
+		}
+		#name-svg {
+			padding-top: 100px;
+		}
+		h1 {
+			color: $cream;
+			text-align: center;
+		}
+		#manicule {
+			height: 10%;
+			padding-bottom: 30px;
+			padding-left: 40%;
+			padding-top: 30px;
+			width: 10%;
+			@include lg{
+				height: 30%;
+				width: 20%;
+				padding-top: 75px;
+			}
+		}
+	}
+	#index-design-container {
+		ul {
+			margin: auto 5%;
+			@include md {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 20px;
+			}
+			@include lg{
+				margin: auto 15%;
+				column-gap: 50px;
+			}
+            #baskerville {
+				background-image: url('../img/design/baskerville-mockup.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					height: 40vh;
+					grid-column-start: 2;
+					grid-row-end: 2;
+					grid-row-start: 1;
+				}
+				@include lg{
+					height: 55vh;
+				}
+            }
+            #bertoia {
+				background-image: url('../img/design/bert.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					grid-column-start: 1;
+					grid-column-end: 3;
+					grid-row-start: 2;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+			#basement {
+				background-image: url('../img/design/basement_cover.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					height: 40vh;
+					grid-column-start: 1;
+					grid-row-start: 1;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+			#pcc {
+				background-image: url('../img/design/pcc.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					grid-column-end: 3;
+					grid-column-start: 1;
+					grid-row-start: 3;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+		}
+	}
+	#index-photography-container {
+		ul {
+			margin: auto 5%;
+			@include md {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 20px;
+			}
+			@include lg{
+				margin: auto 15%;
+				column-gap: 50px;
+			}
+			#blue-van {
+				background-image: url('../img/photog/blue-van.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+				@include md {
+					height: 40vh;
+					grid-column-start: 1;
+					grid-row-start: 1;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+			#portrait {
+				background-image: url('../img/photog/portrait.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					height: 40vh;
+					grid-column-start: 2;
+					grid-row-end: 2;
+					grid-row-start: 1;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+			#beach {
+				background-image: url('../img/photog/beach.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					grid-column-start: 1;
+					grid-column-end: 3;
+					grid-row-start: 2;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+			#star {
+				background-image: url('../img/photog/star.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 50vh;
+                width: 100%;
+
+				@include md {
+					grid-column-end: 3;
+					grid-column-start: 1;
+					grid-row-start: 3;
+				}
+				@include lg{
+					height: 55vh;
+				}
+			}
+		}
+	}
+}
