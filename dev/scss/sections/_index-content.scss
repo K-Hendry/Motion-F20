@@ -25,10 +25,13 @@
 		background-color: $black;
 		height: 100vh;
 		@include lg{
-			height: 150vh;
+			//height: 150vh;
 		}
 		#name-svg {
-			padding-top: 100px;
+			margin-top: 100px;
+			@include lg{
+				margin-top: 0px;
+			}
 		}
 		h1 {
 			color: $cream;
@@ -41,9 +44,10 @@
 			padding-top: 30px;
 			width: 10%;
 			@include lg{
-				height: 30%;
-				width: 20%;
+				height: 10%;
+				width: 5%;
 				padding-top: 75px;
+				padding-left: 47%;
 			}
 		}
 	}

@@ -206,35 +206,35 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/greenBall.js": {
+	"/dev/js/index/index-design.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/greenBall-min.js",
+		"oAP": "/dev/js/index/index-design-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/pinkBall.js": {
-		"bF": 0,
+	"/dev/js/index/index-header.js": {
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/pinkBall-min.js",
+		"oAP": "/dev/js/index/index-header-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/purpleBall.js": {
+	"/dev/js/index/index-photo.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/purpleBall-min.js",
+		"oAP": "/dev/js/index/index-photo-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

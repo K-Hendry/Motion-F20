@@ -609,13 +609,13 @@ footer #icons li i {
   background-color: #212227;
   height: 100vh;
 }
-@media (min-width: 992px) {
-  #index #index-intro-container {
-    height: 150vh;
-  }
-}
 #index #index-intro-container #name-svg {
-  padding-top: 100px;
+  margin-top: 100px;
+}
+@media (min-width: 992px) {
+  #index #index-intro-container #name-svg {
+    margin-top: 0px;
+  }
 }
 #index #index-intro-container h1 {
   color: #FFEAD0;
@@ -630,9 +630,10 @@ footer #icons li i {
 }
 @media (min-width: 992px) {
   #index #index-intro-container #manicule {
-    height: 30%;
-    width: 20%;
+    height: 10%;
+    width: 5%;
     padding-top: 75px;
+    padding-left: 47%;
   }
 }
 #index #index-design-container ul {
