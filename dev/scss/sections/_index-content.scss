@@ -2,34 +2,33 @@
     Index
 ============= */
 #index {
-    p{
-        font-size: rem-calc(20);
-        background-color: $white;
-        opacity: 90%;
-        text-align: center;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-    @include md{
-        p:hover{
-            opacity: 0;
-        }
-    }
-    h2{
-		text-align: center;
-		color: $cream;
-    }
-
 	background-color: $black;
+	p {
+		background-color: $white;
+		font-size: rem-calc(20);
+		opacity: 90%;
+		padding-bottom: 10%;
+		padding-top: 10%;
+		text-align: center;
+	}
+	@include md {
+		p:hover {
+			opacity: 0;
+		}
+	}
+	h2 {
+		color: $cream;
+		text-align: center;
+	}
 	#index-intro-container {
 		background-color: $black;
 		height: 100vh;
-		@include lg{
+		@include lg {
 			//height: 150vh;
 		}
 		#name-svg {
 			margin-top: 100px;
-			@include lg{
+			@include lg {
 				margin-top: 0px;
 			}
 		}
@@ -43,11 +42,11 @@
 			padding-left: 40%;
 			padding-top: 30px;
 			width: 10%;
-			@include lg{
+			@include lg {
 				height: 10%;
-				width: 5%;
-				padding-top: 75px;
 				padding-left: 47%;
+				padding-top: 75px;
+				width: 5%;
 			}
 		}
 	}
@@ -55,46 +54,44 @@
 		ul {
 			margin: auto 5%;
 			@include md {
+				column-gap: 20px;
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				column-gap: 20px;
 			}
-			@include lg{
-				margin: auto 15%;
+			@include lg {
 				column-gap: 50px;
+				margin: auto 15%;
 			}
-            #baskerville {
+			#baskerville {
 				background-image: url('../img/design/baskerville-mockup.jpg');
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
-					height: 40vh;
 					grid-column-start: 2;
 					grid-row-end: 2;
 					grid-row-start: 1;
+					height: 40vh;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
-            }
-            #bertoia {
+			}
+			#bertoia {
 				background-image: url('../img/design/bert.jpg');
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
-					grid-column-start: 1;
 					grid-column-end: 3;
+					grid-column-start: 1;
 					grid-row-start: 2;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}
@@ -104,14 +101,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
-					height: 40vh;
 					grid-column-start: 1;
 					grid-row-start: 1;
+					height: 40vh;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}
@@ -121,14 +117,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
 					grid-column-end: 3;
 					grid-column-start: 1;
 					grid-row-start: 3;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}
@@ -138,13 +133,13 @@
 		ul {
 			margin: auto 5%;
 			@include md {
+				column-gap: 20px;
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				column-gap: 20px;
 			}
-			@include lg{
-				margin: auto 15%;
+			@include lg {
 				column-gap: 50px;
+				margin: auto 15%;
 			}
 			#blue-van {
 				background-image: url('../img/photog/blue-van.jpg');
@@ -152,13 +147,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
+				width: 100%;
 				@include md {
-					height: 40vh;
 					grid-column-start: 1;
 					grid-row-start: 1;
+					height: 40vh;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}
@@ -168,15 +163,14 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
-					height: 40vh;
 					grid-column-start: 2;
 					grid-row-end: 2;
 					grid-row-start: 1;
+					height: 40vh;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}
@@ -186,14 +180,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
-					grid-column-start: 1;
 					grid-column-end: 3;
+					grid-column-start: 1;
 					grid-row-start: 2;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}
@@ -203,14 +196,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				height: 50vh;
-                width: 100%;
-
+				width: 100%;
 				@include md {
 					grid-column-end: 3;
 					grid-column-start: 1;
 					grid-row-start: 3;
 				}
-				@include lg{
+				@include lg {
 					height: 55vh;
 				}
 			}

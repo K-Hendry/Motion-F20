@@ -589,12 +589,12 @@ footer #icons li i {
   background-color: #212227;
 }
 #index p {
-  font-size: 1.25rem;
   background-color: #FFF6EB;
+  font-size: 1.25rem;
   opacity: 90%;
-  text-align: center;
-  padding-top: 10%;
   padding-bottom: 10%;
+  padding-top: 10%;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #index p:hover {
@@ -602,8 +602,8 @@ footer #icons li i {
   }
 }
 #index h2 {
-  text-align: center;
   color: #FFEAD0;
+  text-align: center;
 }
 #index #index-intro-container {
   background-color: #212227;
@@ -631,9 +631,9 @@ footer #icons li i {
 @media (min-width: 992px) {
   #index #index-intro-container #manicule {
     height: 10%;
-    width: 5%;
-    padding-top: 75px;
     padding-left: 47%;
+    padding-top: 75px;
+    width: 5%;
   }
 }
 #index #index-design-container ul {
@@ -641,15 +641,15 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-design-container ul {
+    column-gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
   }
 }
 @media (min-width: 992px) {
   #index #index-design-container ul {
-    margin: auto 15%;
     column-gap: 50px;
+    margin: auto 15%;
   }
 }
 #index #index-design-container ul #baskerville {
@@ -662,10 +662,10 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-design-container ul #baskerville {
-    height: 40vh;
     grid-column-start: 2;
     grid-row-end: 2;
     grid-row-start: 1;
+    height: 40vh;
   }
 }
 @media (min-width: 992px) {
@@ -683,8 +683,8 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-design-container ul #bertoia {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
     grid-row-start: 2;
   }
 }
@@ -703,9 +703,9 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-design-container ul #basement {
-    height: 40vh;
     grid-column-start: 1;
     grid-row-start: 1;
+    height: 40vh;
   }
 }
 @media (min-width: 992px) {
@@ -738,15 +738,15 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-photography-container ul {
+    column-gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
   }
 }
 @media (min-width: 992px) {
   #index #index-photography-container ul {
-    margin: auto 15%;
     column-gap: 50px;
+    margin: auto 15%;
   }
 }
 #index #index-photography-container ul #blue-van {
@@ -759,9 +759,9 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-photography-container ul #blue-van {
-    height: 40vh;
     grid-column-start: 1;
     grid-row-start: 1;
+    height: 40vh;
   }
 }
 @media (min-width: 992px) {
@@ -779,10 +779,10 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-photography-container ul #portrait {
-    height: 40vh;
     grid-column-start: 2;
     grid-row-end: 2;
     grid-row-start: 1;
+    height: 40vh;
   }
 }
 @media (min-width: 992px) {
@@ -800,8 +800,8 @@ footer #icons li i {
 }
 @media (min-width: 768px) {
   #index #index-photography-container ul #beach {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
     grid-row-start: 2;
   }
 }
@@ -828,5 +828,107 @@ footer #icons li i {
 @media (min-width: 992px) {
   #index #index-photography-container ul #star {
     height: 55vh;
+  }
+}
+
+/* =============
+    Contact Content
+============= */
+#contact {
+  background-color: #212227;
+}
+#contact #contact-intro h2 {
+  color: #FFEAD0;
+  text-align: center;
+}
+#contact #contact-form form {
+  display: grid;
+  gap: 60px;
+  margin: auto 15vw;
+  width: 70vw;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form {
+    grid-template-areas: "name message" "phone message" "email submit";
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+  }
+}
+#contact #contact-form form section {
+  max-width: 1180px;
+}
+#contact #contact-form form section input {
+  background-color: #FFF6EB;
+  border: none;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  padding: 5% 5%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form section input {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #contact #contact-form form section input {
+    font-size: 1.5625rem;
+    line-height: 2.8125rem;
+  }
+}
+#contact #contact-form form section textarea {
+  background-color: #FFF6EB;
+  border: none;
+  border-left: 1px solid #FFF6EB;
+  border-radius: 5px;
+  border-top: 1px solid #FFF6EB;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  height: 100%;
+  padding: 5% 5%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form section textarea {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #contact #contact-form form section textarea {
+    font-size: 1.5625rem;
+    line-height: 2.8125rem;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #name {
+    grid-area: name;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #message {
+    grid-area: message;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #phone {
+    grid-area: phone;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #email {
+    grid-area: email;
+  }
+}
+#contact #contact-form form #submit {
+  background-color: transparent;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #submit {
+    grid-area: submit;
+    padding-top: 10%;
   }
 }

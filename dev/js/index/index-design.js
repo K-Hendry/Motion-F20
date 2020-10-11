@@ -11,7 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 const designTL = gsap.timeline();
 
 designTL.from("#baskerville", {
-        duration: 0.5,
+        duration: .75,
+        alpha: 0,
         y: -200
     })
     .from("#basement", {
