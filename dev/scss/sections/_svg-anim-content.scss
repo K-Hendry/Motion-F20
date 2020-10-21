@@ -5,14 +5,21 @@
 #svg-anim{
     background-color: $black;
     display: grid;
-    grid-template-columns: auto 20% auto;
+    grid-template-columns: auto 15% auto;
     grid-template-areas: ". svg .";
+    grid-template-rows: 500px;
     >div{
         grid-area: svg;
-
         svg{
-
-
         }
     }
+}
+#complete{
+    background-color: $cream;
+    color: $black;
+    border: 140px $cream solid;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
 }

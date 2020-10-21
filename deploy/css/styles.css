@@ -939,9 +939,19 @@ footer #icons li i {
 #svg-anim {
   background-color: #212227;
   display: grid;
-  grid-template-columns: auto 20% auto;
+  grid-template-columns: auto 15% auto;
   grid-template-areas: ". svg .";
+  grid-template-rows: 500px;
 }
 #svg-anim > div {
   grid-area: svg;
+}
+#complete {
+  background-color: #FFEAD0;
+  color: #212227;
+  border: 140px #FFEAD0 solid;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
 }

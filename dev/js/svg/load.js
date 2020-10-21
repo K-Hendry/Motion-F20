@@ -1,12 +1,12 @@
-// import {gsap} from "gsap";
+import {gsap} from "gsap";
 
-// gsap.set("#Loading", {transformOrigin: "center"})
+//gsap.set("#Loading", {transformOrigin: "center"})
 
-// const loadTL = gsap.timeline({repeat:-1, ease:"none", yoyo:"true"});
+const loadTL = gsap.timeline({repeat:10, ease:"none", yoyo:"true"});
 
-// loadTL.from("#...", {transformOrigin: "center", duration:.25, xPercent:50})
-//     .from("#el2", {transformOrigin: "center", duration:.25, xPercent:50})
-//     .from("#el3", {transformOrigin: "center", duration:.25, xPercent:50});
+loadTL.from("#el1", {transformOrigin: "center", duration:.25, yPercent:150, scaleX:0})
+    .from("#el2", {transformOrigin: "center", duration:.25, yPercent:150, scaleX:0})
+    .from("#el3", {transformOrigin: "center", duration:.25, yPercent:150, scaleX:0});
 
-//     export function loadAnimation(){
-// }
+    export function loadAnimation(){
+}
