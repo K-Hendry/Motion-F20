@@ -174,6 +174,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/deploy/svg-anim.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/svg-anim.html",
+		"oF": 0
+		},
 	"/dev/about.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -222,6 +230,14 @@
 		"oAP": "/dev/content/index.html",
 		"oF": 0
 		},
+	"/dev/content/svg-anim.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg-anim.html",
+		"oF": 0
+		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -267,7 +283,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/index/index-design-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -278,7 +294,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/index/index-header-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -289,7 +305,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/index/index-photo-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -303,6 +319,28 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/svg/k-color.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/svg/k-color-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/svg/load.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/svg/load-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -462,6 +500,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_svg-anim-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_svg-anim-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -474,6 +525,14 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
+		},
+	"/dev/svg-anim.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/svg-anim.html",
+		"oF": 2
 		},
 	"/node_modules": {
 		"ft": 65536,

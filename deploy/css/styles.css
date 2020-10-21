@@ -932,3 +932,16 @@ footer #icons li i {
     padding-top: 10%;
   }
 }
+
+/* =============
+    SVG-Demo Content
+============= */
+#svg-anim {
+  background-color: #212227;
+  display: grid;
+  grid-template-columns: auto 20% auto;
+  grid-template-areas: ". svg .";
+}
+#svg-anim > div {
+  grid-area: svg;
+}

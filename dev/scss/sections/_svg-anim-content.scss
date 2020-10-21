@@ -1,0 +1,18 @@
+/* =============
+    SVG-Demo Content
+============= */
+
+#svg-anim{
+    background-color: $black;
+    display: grid;
+    grid-template-columns: auto 20% auto;
+    grid-template-areas: ". svg .";
+    >div{
+        grid-area: svg;
+
+        svg{
+
+
+        }
+    }
+}
